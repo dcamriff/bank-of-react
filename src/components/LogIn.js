@@ -14,9 +14,7 @@ class LogIn extends Component {
     }
 
     handleChange = (e) => {
-        const updatedUser = {
-            ...this.state.user
-        }
+        const updatedUser = {...this.state.user}
         const inputField = e.target.name
         const inputValue = e.target.value
         updatedUser[inputField] = inputValue
