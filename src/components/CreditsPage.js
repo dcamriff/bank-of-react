@@ -3,7 +3,7 @@ import React from 'react'
 import CreditsList from './CreditsList'
 import AccountBalance from './AccountBalance'
 import {Link} from 'react-router-dom'
-// import NewCreditForm from './NewCreditForm'
+import NewCreditForm from './NewCreditForm'
 
 const CreditsPage = (props) => {
     return (
@@ -13,7 +13,7 @@ const CreditsPage = (props) => {
 
             <AccountBalance accountBalance={props.accountBalance}/>
 
-            {/* <NewCreditForm addNewCredit={props.addNewCredit}/> */}
+            <NewCreditForm addNewCredit={props.addNewCredit}/>
             <br/>
 
             <CreditsList credits={props.credits}/>
