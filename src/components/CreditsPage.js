@@ -13,7 +13,7 @@ const CreditsPage = (props) => {
 
             <AccountBalance accountBalance={props.accountBalance}/>
 
-            <NewCreditForm addNewCredit={props.addNewCredit}/>
+            <NewCreditForm addNewCredit={props._addNewCredit}/>
             <br/>
 
             <CreditsList credits={props.credits}/>
