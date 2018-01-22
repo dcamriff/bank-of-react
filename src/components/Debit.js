@@ -6,7 +6,7 @@ const Debit = (props) => {
             <span>Descrition: {props.description}</span>
             <span> | </span>
             <span>Amount: {props.amount}</span>
-            <span>Date: props.date}</span>
+            <span>Date: {props.date}</span>
         </div>
     )
 }

@@ -1,9 +1,7 @@
 import React from 'react'
-
 import Credit from './Credit'
 
 const CreditsList = (props) => {
-
     const creditComponents = props.credits.map((credit, index) => {
         return
         <Credit
@@ -14,9 +12,9 @@ const CreditsList = (props) => {
         })
 
         return (
-        <div>
-            {creditComponents}
-        </div>
+            <div>
+                {creditComponents}
+            </div>
     )
 }
 

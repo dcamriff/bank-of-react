@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Debit from './Debit'
 
 const DebitsList = (props) => {
-    const debitComponents = props.debits.map((credit, index) => {
+    const debitComponents = props.debits.map((debit, index) => {
         return
         <Debit
             description={debit.description}

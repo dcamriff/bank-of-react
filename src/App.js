@@ -4,6 +4,7 @@ import Home from './components/Home'
 import UserProfile from './components/UserProfile'
 import LogIn from './components/LogIn'
 import CreditsPage from './components/CreditsPage'
+import DebitsPage from './components/DebitsPage'
 
 import axios from 'axios'
 
@@ -49,6 +50,8 @@ class App extends Component {
 
     const CreditsPageComponent = () => (<CreditsPage credits={this.state.credits} accountBalance={accountBalance} {...this.props} />)
 
+    const DebitsPageComponent = () => (<DebitsPage credits={this.state.debits} accountBalance={accountBalance} {...this.props} />)
+
 
     return (
       <Router>
@@ -63,6 +66,7 @@ class App extends Component {
           <Route exact path="/userProfile" render={UserProfileComponent}/>
           <Route exact path="/login" render={LogInComponent}/>
           <Route exact path="/credits" render={CreditsPageComponent}/>
+          <Route exact path="/debits" render={DebitsPageComponent}/>
         </Switch>
         </div>
       </Router>
